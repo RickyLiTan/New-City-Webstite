@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>New City Church</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- style sheets -->
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=DM%20Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div id="myNav" class="overlay">
+            <div class ="close-flex">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <div class="overlay-content">
+                <div class = "drop">About<i class="arrow down black"></i></div>
+                <div class="panel">
+                    <a href="pages/about.html">About Us</a>
+                    <a href="pages/who.html">Who are we</a>
+                </div>
+                <div class = "drop">Discover<i class="arrow down black"></i></div>
+                <div class="panel">
+                    <a href="pages/expect.html">What to expect</a>
+                    <a href="pages/gospel.html">The Gospel</a>
+                </div>
+              <a href="pages/denomination.html">Our Denomination</a>
+              <a href="#CONTACT" onclick="closeNav()">Contact Us</a>
+              <a href="pages/give.html">Give</a>
+            </div>
+        </div>
+        <img src = "img/e490309fd8f5b1610597334ce1b5fb75.jpeg" alt = "Praise" class = "homepage-image">
+            <header>
+                    <nav>
+                        <ul class = "flex">
+                            <li class = "mobile-btn"><a href = "index.html">
+                                <img src = "img/Homepage-Mobile.svg" alt = "NCC Logo" class = "logo-image">
+                            </a></li>
+                            <li class = "home-btn"><a href = "index.html">
+                                <img src = "img/HomepageBtn.svg" alt = "NCC Logo" class = "logo-image">
+                            </a></li>
+                            <li><div class="dropdown">
+                                <a>About<i class="arrow down"></i></a>
+                                <div class="dropdown-content black">
+                                    <a href="pages/about.html">About us</a>
+                                    <a href="pages/who.html">Who are we</a>
+                                </div>
+                            </div></li>
+                            <li><div class="dropdown">
+                                <a>Discover<i class="arrow down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="pages/gospel.html black">The Gospel</a>
+                                    <a href="pages/expect.html">What to expect</a>
+                                </div>
+                            </div></li>
+                            <li class = "increase"><a  href="pages/denomination.html">Our Denomination</a></li>
+                            <li class = "increase"><a href="#CONTACT">Contact Us</a></li>
+                            <li class = "increase"><a href="pages/give.html">Give</a></li>
+                            <li><img src = "img/Hamburger.png" class = "hamburger" alt = "hamburger menu" onclick="openNav()"></li>
+                        </ul>
+                    </nav>
+            </header>
+        <main>
+            <div class = "welcome">
+                <div class = "Welcome-Text">
+                    <h2>Welcome to <br>New City Church</h2>
+                    <hr>
+                    <p>The Whole Church taking the Whole Gospel to the Whole City</p>
+                    <div class = "flex-btns">
+                        <a class="join-btn homepage-btns"  href = "#INFO">Join in-person</a>
+                        <a class="online-btn homepage-btns"  href = "" onclick="youtubelive()">Join online</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "info" id = "INFO">
+                <div class = "flex-info">
+                    <div class = "information">
+                        <h2>Service Information</h2>
+                        <hr>
+                        <h3><strong>TIME | </strong>10:30AM every Sunday</h3>
+                        <h3><strong>WHERE | </strong>Varsity Community Center<br>4303 Varsity Dr NW, Calgary, AB</h3>
+                        <p>New City's in person services are held at 10:30am at the Varsity Community Association. Plenty of parking is available. Coffee and tea will be provided most Sundays.</p>
+                    </div>
+                    <div class = "Map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.8934228048715!2d-114.15180752316343!3d51.09197437172183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f31adbf9aa3%3A0x2743dc0fb5d06e17!2sNew%20City%20Church%20Calgary!5e0!3m2!1sen!2sca!4v1724982936102!5m2!1sen!2sca" 
+                            style="border:0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class = "faq">
+                <div class = "flex-info">
+                    <img src = "img/Image-Frame.png" alt = "Image frame" class = "image-frame">
+                    <div class = "faq-section">
+                        <h2>FAQ</h2>
+                        <div class = "redline">
+                            <hr>
+                        </div>
+                        <hr> 
+                        <div class = "drop">What should I expect?</div>
+                        <div class="panel">
+                            <p>There will be people from a variety of backgrounds dressed in everything from casual to business casual. Come as you are! We are made to worship the one true God who has made you and everything for himself. You will be guided through a time of song, prayer, scripture, and reflection that points you to who God is and what he has done and continues to do through his Spirit.  Our music seeks to reflect the diversity and vibrancy of our city by incorporating the best of a variety of styles – hymns, contemporary music, as well as songs from the wider global church body. Feel free to join in or to simply listen to the words.</p>
+                        </div>
+                        <hr>
+                        <div class = "drop">How do I get connected?</div>
+                        <div class="panel">
+                            <p>We want to welcome you and help you connect to our church community! If you would like more information about our church or the Christian faith, please fill in a Newcomer Card and drop it into the box at the Connection Table so we can answer any questions you might have or help you get more connected. We do not share your information outside of our church.</p>
+                        </div>
+                        <hr>
+                        <div class = "gospel-link"><a href="pages/gospel.html">What is the gospel?</a></div>
+                    </div>
+                </div>
+            </div>
+        </main>    
+        <footer>
+                <div class = "Contact" id = "CONTACT">
+                    <h2>Have questions?</h2>
+                    <hr>
+                    <div class ="flex-contact">
+                        <div class = "contact-form">
+                            <form action="https://formspree.io/f/xzzbparw" method="POST">
+                                <div class = "same-line">
+                                    <div class = "left">
+                                        <label for="fname">Your Name*</label>
+                                        <input type="text" id="fname" name = "name" required>
+                                    </div>
+                                    
+                                    <div class = "right">
+                                        <label for="pnum">Phone Number</label>
+                                        <input type="text" id="pnum" name="number">
+                                    </div>
+                                </div>
+
+                                <label for="eaddress">Email address*</label>
+                                <input type="email" id="eaddress" name = "email" required>
+
+                                <label for="message">Message</label>
+                                <textarea name = "message" id="message"></textarea>
+                                <button type="submit" class="submit-btn homepage-btns">Submit</button>
+                            </form>
+                        </div>
+                        <div class = "socials">
+                            <p>We'd love to get in touch. Send any questions you have through our form, and someone will get back to you as soon as possible. Or contact us through our email or phone.</p>
+                            <h3><strong>EMAIL | </strong>office@newcitychurch.ca</h3>
+                            <h3><strong>PHONE | </strong>825-733-1852</h3>
+                            <div class = "icons">
+                                <img src = "img/Facebook.svg" alt = "facebook icon" onclick="facebook()">
+                                <img src= "img/Instagram.svg" alt = "instagram icon" onclick="instagram()">
+                                <img src= "img/Youtube.svg" alt = "youtube icon" onclick="youtube()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <script src="scripts/Functions.js"></script>
+        <script src ="scripts/Hamburger.js"></script>
+        <script src="scripts/Links.js"></script>
+    </body>
+</html>

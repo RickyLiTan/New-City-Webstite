@@ -1,0 +1,2432 @@
+body {
+    background: white;
+    color: black;
+    height: auto;
+    font-family: "DM Sans";
+    width: 100vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main h2, p {
+    font-family: 'DM Sans';
+    font-size: min(2.917vw, 56px);
+}
+
+main h2 {
+    font-weight: 700;
+}
+
+.enlarge p {
+    font-size: 20px;
+}
+
+
+.anchor {
+    display:block;
+    padding-top: min(3.656vw, 70px);
+    margin-top: min(2.60412vw, 50px);
+ }
+
+
+footer {
+    background: var(--Dark-Blue, #434B5F);
+    color:white;
+    max-height: min(993px, 51.72vw);
+    padding-top: min(160px, 8.333vw);
+    padding-left: 20.0521vw;
+    padding-bottom: min(160px, 8.333vw);
+    padding-right: 20.0521vw;
+}
+
+
+.arrow {
+    border: solid white;
+    border-width: 0 min(3px, 0.15625vw) min(3px, 0.15625vw) 0;
+    display: inline-block;
+    padding: min(3px, 0.15625vw);
+    margin-left: min(10px, 0.521vw);
+    margin-bottom: min(4px, 0.21vw);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a, .overlay .drop {
+    font-family: 'DM Sans';
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.5s;
+    min-width: 350px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.overlay .panel a {
+    font-size: 20px;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    top: 23px;
+    right: -305.5px;
+    float: right;
+    font-size: 60px;
+}
+  
+
+
+/*Footer*/
+.Contact {
+    max-width: min(1150px, 59.896vw);
+    max-height: min(673px, 35.0521vw);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.flex-contact {
+    margin-top: min(80px, 4.17vw);
+    display: flex;
+    max-width: min(1150px, 59.896vw);
+    width: 100%;
+    height: 100%;
+    max-height: min(526px, 27.396vw);
+    height: 100%;
+    gap: min(114px, 5.9375vw);
+    justify-content: center;
+}
+
+.Contact h2 {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: min(498px, 25.9375vw);
+    height: 100%;
+    max-height: min(56px, 2.917vw);
+    font-family: "Lora";
+    font-size: min(3.333vw, 64px);
+    font-weight: 700;
+}
+.Contact hr {
+    position: relative;
+    max-width: min(507px, 26.40625vw);
+    width: 100%;
+    height: min(23px, 1.198vw);
+    border-radius: 100px;
+    border: 0;
+    margin: 0;
+    bottom: min(0.4167vw, 5px);
+    background: linear-gradient(270deg, rgba(243, 167, 32, 0.7) -12.03%, rgba(243, 167, 32, 0) 93.57%);
+}
+
+#fname, #pnum {
+    max-width: 100%;
+    width: min(272.5px, 14.193vw);
+    max-height: 100%;
+    height: min(50px, 2.6042vw);
+    border-radius: 3px;
+}
+
+#eaddress, #message {
+    width: min(563px, 29.323vw);
+    max-width: 100%;
+    height: min(152px, 7.917vw);
+    max-height: 100%;
+    border-radius: 3px;
+}
+
+#eaddress {
+    height: min(50px, 2.6042vw);
+    max-height: 100%;
+}
+
+
+.contact-form {
+    max-width: min(563px, 29.323vw);
+}
+
+
+.contact-form label {
+    font-family: "DM Sans";
+    font-size: min(0.9375vw, 18px);
+    line-height: 15.75px;
+    text-align: left;
+    height: min(16px, 0.8333vw);
+    margin-bottom:min(16px, 0.8333vw);
+}
+
+
+.contact-form input, textarea {
+    outline: none;
+    font-family: "DM Sans";
+    font-size: max(0.9375vw, 14px);
+    line-height: 15.75px;
+    text-align: left;
+    padding-left: min(20.5px, 1.0678vw);
+    padding-right: min(20.5px, 1.0678vw);
+    padding-top: min(17px, 0.91146vw);
+    padding-bottom: min(17px, 0.91146vw);
+    margin-bottom: min(38px, 1.97917vw);
+    border: 1px solid #FFFFFF73;
+    background-color: #434B5F;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+
+
+
+.contact-form input:focus, textarea:focus {
+    background-color: white;
+    color: black;
+}
+
+
+.contact-form form, label {
+    display:block;
+}
+
+.contact-form .same-line {
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-form button {
+    border: none;
+    color: white;
+}
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}   
+
+.socials {
+    max-width: min(464px, 24.167vw);
+    max-height: min(402px, 20.9375vw);
+    padding: min(32px, 1.67vw) 0px min(32px, 1.67vw) 0px;
+    gap: min(61px, 3.18vw);
+    
+}
+
+.socials p {
+    width: min(464px, 24.17vw);
+    height: 100px;
+    font-family: "DM Sans";
+    font-size: min(1.0417vw, 20px);
+    line-height: min(1.3021vw, 25px);
+    text-align: left;
+    margin-bottom: min(45px, 2.34375vw);
+}
+
+.socials h3 {
+    font-family: "DM Sans";
+    font-size: min(1.0417vw, 20px);
+    line-height: 25px;
+    text-align: left;
+    margin-top: min(16px, 0.8333vw);
+}
+
+.icons {
+    margin-top: min(62px, 3.18vw);
+}
+
+.icons img {
+    margin-right: min(32px, 1.6146vw);
+    max-width: min(50px, 2.6042vw);
+    max-height: min(50px, 2.6042vw);
+    width: 100%;
+    height: 100%;
+}
+
+.icons img:hover {
+    cursor: pointer;
+}
+
+
+/*Navigation*/
+.flex {
+    display: flex; 
+    justify-content: flex-end;
+    max-width: 75.6vw;
+    width: 100%;
+    max-height: min(99.03px ,5.15vw);
+    height: 100%;
+    align-items: center;
+}
+
+nav {
+    max-width: 75.6vw;
+    height: min(99.03px ,5.15vw);
+}
+
+header {
+    font-family: 'Lato';
+    background:transparent;
+    position: absolute;
+    max-height: 9vw;
+    height: 100%;
+    max-width: 75.52vw;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2.1vw;
+    padding-left: 12.24vw;
+    padding-right: 12.24vw;
+}
+
+header a {
+    font-size: min(1.0417vw, 20px);
+    margin-left: min(0.78125vw, 15px);
+    line-height: 17.5px;
+    font-weight: 700;
+}
+
+.increase {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+
+li a {
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+
+
+.black .arrow {
+    border: solid black;
+    border-width: 0 min(3px, 0.15625vw) min(3px, 0.15625vw) 0;
+    padding: min(3px, 0.15625vw);
+    margin-left: min(10px, 0.521vw);
+    margin-bottom: min(4px, 0.21vw);
+}
+
+ul {
+    gap: 1.46vw;
+}
+
+
+
+.flex li:hover {
+    background-color: rgba(223, 221, 221, 0.5);
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.dropdown .dropbtn {
+    font-size: 0.8333vw;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    margin-top: 1vw;
+    display: none;
+    position: absolute;
+    background-color: rgba(223, 221, 221, 0.5);
+    min-width: 84.16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 0.625vw 0.8333vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a:hover, .dropdown:hover .about-hover {
+    background-color: rgba(223, 221, 221, 0.5);
+}
+
+.black a{
+    color: black;
+}
+
+
+/*Home page*/
+
+/*Logo*/
+.logo-image {
+    max-width: min(230.03px, 11.9808vw);
+    max-height: min(77px, 4.012vw);
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    
+}
+
+
+.home-btn {
+    max-width: min(230.03px, 11.9808vw);
+    max-height: min(77px, 4.012vw);
+    height: 100%;
+    width: 100%;
+    margin-right: auto;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.flex .home-btn:hover {
+    background-color: rgb(255, 255, 255, 0);
+}
+
+
+.hamburger {
+    display: none;
+}
+
+.mobile-btn a{
+    display: none;
+    max-width: 186px;
+    max-height: 48px;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/*Start section*/
+.hero {
+    max-height: min(960px, 100%);
+    max-width: 75.52vw;
+    width: 100%;
+    height: 100%;
+    padding-top: min(11.3021vw, 217px);
+    padding-right: 12.24vw;
+    padding-left: 12.24vw;
+    padding-bottom: min(4.167vw, 80px);
+}
+
+.hero img {
+    border-radius: 20px;
+    max-width: min(1450px, 75.521vw);
+    max-height: min(26.09375vw, 501px);
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-title {
+    position: absolute;
+    left: min(19.792vw, 380px);
+    top: min(28.75vw, 552px);
+    max-width: min(23.698vw, 455px);
+    width: 100%;
+    max-height: min(3.28125vw, 63px);
+    height: 100%;
+    color: white;
+    left: 0; 
+    right: min(850px, 44.271vw); 
+    margin-inline: auto;
+}
+
+.page-Text h2{
+    position: relative;
+    font-family: "Lora";
+    font-size: min(72px, 3.75vw);
+    font-weight: 700;
+    text-align: left;
+    z-index: 1;
+}
+
+.page-Text hr {
+    margin-top: min(-0.0521vw, -1px);
+    position: relative; 
+    z-index: 0;
+    background: linear-gradient(270deg, rgba(243, 167, 32, 0.8) -12.03%, rgba(243, 167, 32, 0) 93.57%);
+    max-width: min(455px, 52.1vw);
+    width: 100%;
+    height: min(1.198vw, 23px);
+    border: 0;
+    border-radius: 100px;
+    bottom: min(21.12px, 1.1vw);
+}
+
+
+/*Homepage parameters*/
+.homepage-image{
+    object-fit: cover;
+    object-position: 100% 60%;
+    height: min(960px, 100%);
+    max-width: 100vw;
+    width: 100%;
+    max-height: 50vw;
+    height: 960px;
+    transform: scaleX(-1);
+}
+
+
+.Welcome-Text, .Gospel-Text{
+    max-width: min(1000.32px, 52.1vw);
+    width: 100%;
+    max-height: min(302px, 15.7vw);
+    height: 100%;
+    color: white;
+}
+
+.welcome, .gospel {
+    gap: min(64px, 3.333vw);
+    position: absolute;
+    top: min(329px, 17.135vw);
+    left: 25vw;
+    max-width: min(1000.32px, 52.1vw);
+    width: 100%;
+    max-height: min(302px, 15.7vw);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.Welcome-Text hr{
+    position: relative; 
+    z-index: 0;
+    background: linear-gradient(270deg, rgba(243, 167, 32, 0.8) -12.03%, rgba(243, 167, 32, 0) 93.57%);
+    max-width: min(1000.32px, 52.1vw);
+    width: 100%;
+    height: min(1.198vw, 23px);
+    border: 0;
+    border-radius: 100px;
+    bottom: min(21.12px, 1.1vw);
+}
+
+.Welcome-Text h2, .Gospel-Text h2 {
+    position: relative;
+    z-index: 1;
+    max-width: min(1000.32px, 52.1vw);
+    width: 100%;
+    max-height: min(63px, 3.28125vw);
+    height: 100%;
+    font-family: 'Lora';
+    font-size: min(3.75vw, 72px);
+    font-weight: 700;
+    line-height: min(3.28125vw, 63px);
+    text-align: center;
+}
+
+.Welcome-Text p{
+    max-width: min(647px, 33.698vw);
+    width: 100%;
+    max-height: min(60px, 3.125vw);
+    height: 100%;
+    font-family: 'DM Sans';
+    font-size: min(1.25vw, 24px);
+    line-height: 30px;
+    margin: auto;
+    margin-top: min(40px,0.78125vw);
+    margin-bottom: min(64px,3.333vw);
+    text-align: center;
+}
+
+.Welcome-Text br {
+    display: none;
+}
+
+.flex-btns {
+    display: flex;
+    gap: 24px;
+    max-width: min(584px, 30.4vw);
+    width: 100%;
+    max-height: min(64px, 3.33vw);
+    height: 100%;
+    margin: auto;
+}
+
+.homepage-btns{
+    max-width: min(280px, 14.6vw);
+    width: 100%;
+    max-height: min(64px, 3.333vw);
+    height: 100%;
+    gap: min(10px, 0.521vw);
+    border-radius: 5px; 
+    font-family: 'Lato';
+    font-size:  min(0.9375vw, 18px);
+    font-weight: 700;
+    line-height: min(64px, 3.333vw);    
+    text-align: center;
+    align-self: center;
+}
+
+.homepage-btns:hover{
+    text-decoration: underline;
+}
+
+
+/*Unique button in footer*/
+.submit-btn:hover  {
+    background: #202234;
+    text-decoration: none;
+}
+
+.submit-btn {
+    float: left;
+}
+/*End of unique*/
+
+.join-btn, .submit-btn {
+    background: #6175A9;
+}
+
+.online-btn {
+    background: #434B5F80;
+    border: 2px solid var(--Dark-Blue, #434B5F)
+}
+
+.join-btn:hover, .online-btn:hover, .submit-btn:hover {
+    cursor: pointer;
+}
+/*End of Homepage stuff*/
+
+/*Service Info*/
+.info {
+    margin-top: min(160px, 8.333vw);
+    margin-bottom: min(160px, 8.333vw);
+}
+
+.info iframe {
+    width: min(573px, 29.84vw);
+    height: min(467px, 24.323vw);
+}
+
+.flex-info {
+    display: flex;
+    max-width: 60vw;
+    width: min(1150px, 59.896vw);
+    justify-content: center;
+    height: auto;
+    margin: auto;
+    gap: min(113px, 5.89vw);
+}
+
+.information hr {
+    position: relative;
+    background: linear-gradient(270deg, rgba(225, 50, 50, 0.7) -12.03%, rgba(225, 50, 50, 0) 93.57%);
+    max-width: min(345px, 16.97vw);
+    width: 100%;
+    height: min(23px, 1.198vw);
+    border: 0;
+    border-radius: 100px;
+    margin: 0;
+    margin-bottom: min(40.32px, 2.1vw);
+    bottom: min(20px, 1.042vw);
+}
+
+.information h2 {
+    position: relative;
+    z-index: 1;
+    max-width: min(345px, 17.97vw);
+    width: 100%;
+    max-height: min(128px, 6.67vw);
+    height: 100%;
+    line-height: min(64.4px, 3.3542vw);
+    text-align: left;
+}
+
+.information {
+    max-width: min(464px, 25.21vw);
+    width: 100%;
+    height: auto;
+}
+
+.information h3 {
+    margin-bottom: min(16px, 0.8333vw);
+    max-width: min(464px, 24.167vw);
+    width: 100%;
+    font-family: "DM Sans";
+    font-size:  min(1.04167vw, 20px);
+    line-height: 25px;
+    text-align: left;
+    font-weight: 100;
+}
+
+.information p {
+    margin-top: min(40px, 2.08333vw);
+    font-family: "DM Sans";
+    font-size:  min(0.9375vw, 18px);
+    line-height: 22.5px;
+    text-align: left;
+
+}
+
+strong {
+    font-weight: 900;
+}
+/*End of info*/
+
+/*FAQ*/
+.image-frame {
+    max-width: min(475px, 24.74vw);
+    width: 100%;
+    max-height: min(548.66px, 28.58vw);
+    height: 100%;
+}
+
+
+.faq-section {
+    max-width: min(494px,25.73vw);
+    width: 100%;
+    height: auto;
+}
+
+.faq {
+    margin-bottom: min(160px, 8.333vw);
+}
+
+.faq .flex-info{
+    gap: min(159px, 8.28125vw);
+}
+
+.faq-section h2 {
+    line-height: min(49px, 2.5521vw);
+    text-align: left;
+}
+
+.gospel-link a{
+    color: black;
+}
+
+.faq-section .drop, .gospel-link a {
+    font-family: "DM Sans";
+    font-size: min(1.25vw, 24px);
+    font-weight: 700;
+    line-height: 27.6px;
+    text-align: left;
+}
+
+.faq-section .drop:hover, .active, .gospel-link a:hover {
+    color: #9194AB;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.faq-section p {
+    font-family: "DM Sans";
+    font-size:  min(0.9375vw, 18px);
+    line-height: min(23.4px, 1.21875vw);
+    text-align: left;
+    margin-top: 0.8333vw;
+}
+
+.faq-section hr {
+    border: min(1px, 0.0521vw) solid #6175A9;
+    margin-bottom: min(36px, 1.875vw);
+    margin-top: min(35px, 1.823vw);
+}
+
+.redline hr{
+    position: relative;
+    z-index: -1;
+    background: linear-gradient(270deg, rgba(225, 50, 50, 0.7) -12.03%, rgba(225, 50, 50, 0) 93.57%);
+    width: 100%;
+    height: min(23px, 1.198vw);
+    border: 0;
+    border-radius: 100px;
+    margin-left: 0;
+    width: min(142px, 7.396vw);
+    bottom: min(50px, 2.6042vw);
+    margin-bottom: max(-35px, -1.823vw);
+}
+
+.panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+/*End of FAQ*/
+
+
+/*Whomst*/
+.beginnings, .vision, .service, .connected  {
+    max-width: min(464px, 24.17vw);
+}
+
+.our-vision, .our-beginnings, .our-service, .get-connected {
+    margin-top: min(80px, 4.17vw);
+    margin-bottom: min(80px, 4.17vw);
+}
+
+.beginnings p, .vision p, .service p, .connected p {
+    font-size: min(18px, 0.9375vw);
+    line-height: min(1.172vw, 22.5px);
+    text-align: left;
+    margin-bottom: min(2.08333vw, 40px);
+}
+
+.beginnings h2, .vision h2, .service h2, .connected h2 {
+    position: relative;
+    z-index: 1;
+}
+
+.beginnings hr {
+    width: min(23.542vw, 452px);
+    height: min(1.198vw, 23px);
+    border-radius: 100px;
+    border: 0;
+    margin-top: max(-1.042vw, -20px);
+    margin-bottom: min(2.0833vw, 40px);
+    background: linear-gradient(270deg, rgba(97, 117, 169, 0.7) -12.03%, rgba(97, 117, 169, 0) 93.57%);
+}
+
+.vision hr {
+    width: min(16.823vw, 323px);
+    height: min(1.198vw, 23px);
+    top: min(2.135vw, 41px);
+    border-radius: 100px;
+    border: 0;
+    margin-left: 0;
+    margin-top: max(-1.042vw, -20px);
+    margin-bottom: min(2.0833vw, 40px);
+    background: linear-gradient(270deg, rgba(97, 117, 169, 0.7) -12.03%, rgba(97, 117, 169, 0) 93.57%);
+}
+
+.our-values {
+    background-color: #202234;
+    color: white;
+}
+
+.flex-values {
+    display: flex;
+    padding-top: min(8.3333vw, 160px);
+    padding-right: min(13.8542vw, 266px);
+    padding-bottom: min(8.3333vw, 160px);
+    padding-left: min(13.8542vw, 266px);
+    max-width: min(72.297vw, 1388px);
+    width: 100%;
+    flex-wrap: wrap;
+    gap: min(64px, 3.333vw);
+    margin: auto;
+}
+
+
+.flex-core h2{
+    font-family: "Lora";
+    font-size: min(4.17vw, 80px);
+    font-weight: 700;
+    line-height: min(4.792vw, 92px);
+    text-align: left;
+    max-width: min(3.39vw, 65px);
+    width: 100%;
+}
+
+.List h3 {
+    font-family:"DM Sans";
+    font-size: min(2.083333vw, 40px);
+    font-weight: 700;
+    line-height: min(2.396vw, 46px);
+    text-align: left;
+    margin-bottom: min(1.25vw, 24px);
+}
+
+.List p {
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.172vw, 22.5px);
+    text-align: left;
+    margin-bottom: min(1.172vw, 22.5px);
+}
+
+.flex-core {
+    display: flex;
+    gap: min(1.198vw, 23px);
+    height: auto;
+    max-width: min(34.4792vw, 662px);
+    width: 100%;
+}
+
+.our-beliefs {
+    padding-top: min(8.3333vw, 160px);
+    padding-right: min(29.17vw, 560px);
+    padding-left: min(29.17vw, 560px);
+    padding-bottom: min(8.3333vw, 160px);
+}
+
+.our-beliefs hr{
+    margin-bottom: min(4.219vw, 81px);
+    width: min(18.021vw, 346px);
+    height: min(1.198vw, 23px);
+    top: min(2.0833vw, 40px);
+    border-radius: 100px;
+    border: 0;
+    background: linear-gradient(270deg, rgba(243, 167, 32, 0.8) -12.03%, rgba(243, 167, 32, 0) 93.57%);
+    margin-top: max(-1.0412vw, -20px);
+
+
+}
+
+.our-beliefs h2 {
+    text-align: center;
+    
+}
+
+
+.our-beliefs p {
+    max-width: min(41.67vw, 800px);
+    font-family: "DM Sans";
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.171875vw, 22.5px);
+    text-align: left;
+    margin: auto;
+    margin-bottom: min(2.08333vw, 40px);
+}
+
+/*About us*/
+
+.about hr{
+    max-width: min(22.03125vw, 423px);
+    left: max(-1.3021vw, -25px);
+}
+
+.about-hero img{
+    filter: brightness(70%);
+    object-position: 0% 70%;
+}
+
+.our-elders{
+    font-family: "DM Sans";
+    max-width: min(59.896vw, 1150px);
+    width: 100%;
+    padding-top: min(4.167vw, 80px);
+    padding-bottom: min(4.167vw, 80px);
+    padding-right: min(20.0521vw, 385px);
+    padding-left: min(20.0521vw, 385px);
+    margin: auto;
+}
+
+.our-elders hr {
+    float: left;
+    margin-top: max(-37px, -1.93vw);
+    width: min(15.99vw, 307px);
+    height: min(1.198vw, 23px);
+    border-radius: 100px;
+    border: 0;
+    background: linear-gradient(270deg, rgba(225, 50, 50, 0.7) -12.03%, rgba(225, 50, 50, 0) 93.57%);   
+}
+
+.our-elders h2 {
+    font-size: min(2.917vw, 56px);
+    margin-bottom: max(0.42vw, 18px);
+    font-weight: 700;
+    text-align: left;
+}
+
+.our-elders h3 {
+    font-size: min(0.9375vw, 18px);
+    margin-bottom: max(0.42vw, 18px);
+    font-weight: 700;
+    line-height: min(1.171875vw, 22.5px);
+    text-align: left;
+}
+
+.our-elders h4 {
+    font-size: min(1.67vw, 32px);
+    margin-bottom: max(0.42vw, 18px);
+    font-weight: 700;
+    line-height: min(1.912vw, 36.8px);
+    text-align: left;
+}
+
+.our-elders p {
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.171875vw, 22.5px);
+    text-align: left;
+}
+
+.our-elders img {
+    max-width: min(20.833vw, 400px);
+    width: 100%;
+    max-height: min(20.833vw, 400px);
+    height: 100%;
+}
+
+.flex-elders {
+    margin-top: min(3.3333vw, 64px);
+    display: flex;
+    flex-direction: column;
+    gap: min(3.3333vw, 64px);
+}
+
+.flex-titles {
+    display: flex;
+    gap: min(2.5vw, 48px);
+}
+
+.white-background {
+    background-color: #F9FAFF;
+}
+
+.key-ministries {
+    font-family: "DM Sans";
+    padding-top: 6.25vw;
+    padding-right: 20.0521vw;
+    padding-left: 20.0521vw;
+    padding-bottom: 6.25vw;
+    max-width: min(59.896vw, 1150px);
+    width: 100%;
+    margin: auto;
+}
+
+.key-ministries h2 {
+    font-size: min(2.92vw, 56px);
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+}
+
+.key-ministries hr {
+    width: min(21.3021vw, 409px);
+    height: min(1.198vw, 23px);
+    border-radius: 100px;
+    border: 0;
+    margin-top: max(-1.042vw, -20px);
+    margin-bottom: min(1.3542vw, 26px);
+    background: linear-gradient(270deg, rgba(225, 50, 50, 0.7) -12.03%, rgba(225, 50, 50, 0) 93.57%);
+}
+
+.ministry-box {
+    max-width: min(18.22vw, 350px);
+    max-height: min(11.15vw, 214px);
+    height: 100%;
+    width: 100%;
+    margin-top: min(2.865vw, 55px);
+}
+
+.key-ministries h3 {
+    margin-bottom: min(0.8333vw, 16px);
+    font-size: min(1.67vw, 32px);
+    font-weight: 700;
+    line-height: min(1.92vw, 36.8px);
+    text-align: left;
+    color: var(--Text-fr, #202234);
+}
+
+.key-ministries p {
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.171875vw, 22.5px);
+    text-align: left;
+}
+
+
+.flex-ministries {
+    display: flex;
+    gap: min(2.6041vw, 50px);
+    flex-wrap: wrap;
+    max-width: min(59.896vw, 1150px);
+    width: 100%;
+}
+
+/*What to expect*/
+.expect {
+    max-width: min(29.21875vw, 561px);
+    max-height: min(3.8542vw, 74px);
+    right: min(37.24vw, 715px);
+}
+
+
+.expect hr {
+    width: min(29.21875vw, 561px);
+    margin-right: min(0.521vw, 10px);
+}
+
+.service hr {
+    width: min(16.40625vw, 315px);
+    height: min(1.198vw, 23px);
+    border-radius: 100px;
+    border: 0;
+    margin-left: 0;
+    margin-top: max(-1.042vw, -20px);
+    margin-bottom: min(2.083vw, 40px);
+    background: linear-gradient(270deg, rgba(97, 117, 169, 0.7) -12.03%, rgba(97, 117, 169, 0) 93.57%);
+}
+
+.service-structure {
+    padding-top: min(8.333vw, 160px);
+    padding-right: 29.17vw;
+    padding-left: 29.17vw;
+    padding-bottom: min(6.25vw, 120px);
+    font-family: "DM Sans";
+    color: white;
+    background-color: var(--Text-fr, #202234);
+}
+
+.service-structure h2 {
+    font-size: min(2.917vw, 56px);
+    font-weight: 700;
+    text-align: center;
+}
+
+.service-structure hr {
+    margin-top: max(-1.0417vw, -20px);
+    margin-bottom: min(4.21875vw, 81px);
+    width: min(30.625vw, 588px);
+    height: min(1.198vw, 23px);
+    border-radius: 100px;
+    border: 0;
+    background: linear-gradient(270deg, rgba(243, 167, 32, 0.8) -12.03%, rgba(243, 167, 32, 0) 93.57%);
+}
+
+.service-stuff {
+    max-width: min(800px, 41.67vw);
+    margin: auto;
+}
+
+.service-stuff h3{
+    font-size: min(1.0417vw, 20px);
+    font-weight: 700;
+    line-height: min(1.3021vw, 25px);
+    text-align: left;
+    margin-bottom: min(0.8333vw, 16px);
+}
+
+.service-stuff p {
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.171875vw, 22.5px);
+    text-align: left;
+    margin-bottom: min(2.0833vw, 40px);
+}
+
+
+.connected {
+    max-width: min(24.17vw, 464px);
+    max-height: min(28.18vw, 541px);
+}
+
+.connected p {
+    font-size: min(0.9375vw, 18px);
+    margin-bottom: min(0.9375vw, 18px);
+}
+
+.connected hr {
+    width: min(20.833vw, 400px);
+    height: min(1.198vw, 23px);
+    border-radius: 100px;
+    background: linear-gradient(270deg, rgba(97, 117, 169, 0.7) -12.03%, rgba(97, 117, 169, 0) 93.57%);
+    border: 0;
+    margin-top: max(-1.042vw, -20px);
+    margin-left: min(0.68vw, 13px);
+    margin-bottom: min(2.0833vw, 40px);
+}
+
+/*Gospel*/
+.gospel a:hover  {
+    text-decoration: underline;
+}
+
+.gospel-image {
+    object-fit: cover;
+    object-position: 100% 45%;
+    max-width: 100vw;
+    width: 100%;
+    max-height: 50vw;
+    height: min(36.3021vw, 697px);
+}
+
+.Gospel-Text p {
+    text-align: center;
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.171875vw, 22.5px);
+}
+
+.blog:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Gospel-Text hr {
+    position: relative; 
+    z-index: 0;
+    width: min(36.25vw, 696px);
+    height: min(1.823vw, 35px);
+    border: 0;
+    border-radius: 100px;
+    background: linear-gradient(270deg, rgba(243, 167, 32, 0.8) -12.03%, rgba(243, 167, 32, 0) 93.57%);
+    margin-top: max(-0.99vw, -19px);
+    margin-bottom: min(1.67vw, 32px);
+}
+
+.The-Gospel {
+    padding-left: 20.1vw;
+    padding-right: 20.1vw;
+    padding-top: min(6.25vw, 120px);
+    padding-bottom: min(5.3125vw, 102px);
+    font-family: "DM Sans";
+    max-width: min(1150px, 59.9vw);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.The-Gospel h3 {
+    font-size: min(0.9375vw, 18px);
+    font-weight: 600;
+    line-height: min(1.171875vw, 22.5px);
+    letter-spacing: 0.21em;
+    text-align: left;
+    color: var(--Text, #171A3E);
+    margin-bottom: min(1.25vw, 24px);
+}
+
+.The-Gospel h2 {
+    font-size: min(2.92vw, 56px);
+    font-weight: 700;
+    line-height: min(3.4vw, 64.4px);
+    text-align: left;
+    margin-bottom: min(2.1vw, 40px);
+    color: var(--Text-fr, #202234);
+
+}
+
+.The-Gospel p {
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.171875vw, 22.5px);
+    text-align: left;
+    margin-bottom: min(4.17vw, 80px);
+    color: var(--Text, #171A3E);
+}
+
+.The-Gospel img {
+    object-fit: cover;
+    object-position: 100% 45%;
+    max-width: min(1150px, 59.9vw);
+    max-height: min(23.75vw, 456px);
+    height: 100%; 
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: min(4.17vw, 80px);
+}
+
+.sub-gospel p{
+    margin-bottom: min(0.9375vw, 18px);
+}
+
+.sub-gospel hr{
+    width: min(16.51vw, 317px);
+    height: min(1.198vw, 23px);
+    border-radius: 100px;
+    border: 0;
+    margin-left: 0;
+    margin-top: max(-3.39vw, -65px);
+    margin-bottom: min(2.1vw, 40px);
+    background: linear-gradient(270deg, rgba(225, 50, 50, 0.7) -12.03%, rgba(225, 50, 50, 0) 93.57%);
+}
+
+
+
+/*Denomination*/
+.denomination{
+    max-width: min(35.8vw, 687px);
+    max-height: min(3.698vw, 71px);
+    right: min(26.042vw, 500px);
+}
+
+.denomination h2 {
+    max-width: min(33.7vw, 647px);
+}
+
+.denomination hr {
+    max-width: min(35.8vw, 687px);
+    border-radius: 100px;
+    margin-left: max(-1.042vw, -20px);
+}
+
+.our-church {
+    padding-left: 19.48vw;
+    padding-right: 19.48vw;
+    padding-top: min(4.17vw, 80px);
+    padding-bottom: min(7.4vw, 142px);
+}
+
+.church {
+    text-align: center;
+    font-family: "DM Sans";
+}
+
+
+.church h2 {
+    font-size: min(2.917vw, 56px);
+    font-weight: 700;
+    line-height: min(3.3542vw, 64.4px);
+}
+
+.church hr {
+    margin-top: max(-1.198vw, -23px);
+    margin-bottom: min(2.1vw, 40px);
+    width: min(46.4vw, 890px);
+    height: min(1.198vw, 23px);
+    border-radius: 100px;
+    border: 0;
+    background: linear-gradient(270deg, rgba(97, 117, 169, 0.7) -12.03%, rgba(97, 117, 169, 0) 93.57%);
+}
+
+.church p {
+    font-size: min(1.25vw, 24px);
+    font-weight: 400;
+    line-height: min(1.5625vw, 30px);
+}
+
+.church img{
+    max-width: min(14.9vw, 286px);
+    max-height: min(7.37vw, 141.44px);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: min(2.1vw, 40px);
+}
+
+.flex-church {
+    margin-top: min(4.17vw, 80px);
+    display: flex;
+    max-width: min(59.896vw, 1150px);
+    gap: min(4.17vw, 80px);
+    text-align: left;
+    flex-direction: column;
+}
+
+.who-church, .where-church {
+    width: 100%;
+}
+
+.flex-church h3 {
+    font-size: min(32px, 1.67vw);
+    font-weight: 700;
+    line-height: min(1.3021vw, 25px);
+    margin-bottom: min(1.25vw, 24px);
+}
+
+.flex-church p {
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.171875vw, 22.5px);
+    margin-bottom: min(0.9375vw, 18px);
+}
+
+.pca {
+    background-color: #202234;
+    color: white;
+    padding-top: min(6.25vw, 120px);
+    padding-right: 12.8vw;
+    padding-left: 12.8vw;
+    padding-bottom: min(6.25vw, 120px);
+    text-align: center;
+    font-family: "DM Sans";
+}
+
+.pca h2 {
+    font-size: min(2.92vw, 56px);
+    font-weight: 700; 
+}
+
+.pca hr {
+    width: min(36.875vw, 708px);
+    height: min(1.198vw, 23px);
+    margin-top: max(-1.198vw, -23px);
+    margin-bottom: min(2.0833vw, 40px);
+    border-radius: 100px ;
+    border: 0;
+    background: linear-gradient(270deg, rgba(243, 167, 32, 0.7) -12.03%, rgba(243, 167, 32, 0) 93.57%);
+}
+
+.pca p {
+    font-size: min(1.25vw, 24px);
+    font-weight: 700;
+    line-height: min(1.5625vw, 30px);
+}
+
+/*Giving*/
+.Giving {
+    right: min(39.0625vw, 750px);
+}
+
+
+.Giving hr {
+    max-width: min(14.17vw, 272px);
+    max-height: min(1.198vw, 23px);
+    border-radius: 100px;
+    margin-left: 0;
+    
+}
+
+.Give {
+    padding-top: min(4.17vw, 80px);
+    padding-right: 19.48vw;
+    padding-left: 19.48vw;
+    padding-bottom: min(8.333vw, 160px);
+    text-align: center;
+    font-family: "DM Sans";
+    width: min(61.042vw, 1172px);
+    margin: auto;
+}
+
+.Give h2 {
+    font-size: min(2.917vw, 56px);
+    font-weight: 700;
+    line-height: min(3.4vw, 64.4px);
+}
+
+.Give hr {
+    width: min(23.7vw, 455px);
+    height: min(1.198vw, 23px);
+    border-radius: 100px;
+    border: 0;
+    margin-top: max(-1.15vw, -22px);
+    margin-bottom: min(2.1vw, 40px);
+    background: linear-gradient(270deg, rgba(97, 117, 169, 0.7) -12.03%, rgba(97, 117, 169, 0) 93.57%);
+}
+
+.Give p {
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.171875vw, 22.5px);
+    margin-bottom: min(2.1vw, 40px);
+}
+
+.give-btn {
+    float: unset;
+    border-radius: 5px;
+    margin: auto;
+    color: white;
+    font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+    .homepage-image {
+        max-width: 100vw;
+        min-height: 768px;
+        object-position: 85% 60%;
+    }
+
+
+
+
+    .mobile-btn a {
+        margin-right: auto;
+        padding: 0;
+        width: 186px;
+        height: 48px;
+    }
+
+
+    .submit-btn {
+        margin-top: 38px;
+    }
+
+    .flex {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 48px;
+        padding-right: 48px;
+        max-height: 150px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    header {
+        max-height: 150px;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    header a
+    {
+        display: none;
+    }
+
+    .hamburger, header .mobile-btn a{
+        display: block;
+    }
+
+    .logo-image {
+        max-width: 186px;
+        max-height: 48px;
+    }
+
+
+    nav {
+        max-width: 100%;
+       
+    }
+
+    .welcome, .gospel {
+        max-width: calc(100vw - 96px);
+        max-height: 308px;
+        top: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .Welcome-Text, .Gospel-Text {
+        max-width: 100%;
+    }
+
+    .Welcome-Text h2, .Gospel-Text h2 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36.84px;
+        text-align: center;
+        max-width: 261px;
+        min-height: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        font-weight: 700;
+
+    }
+
+    .Welcome-Text br {
+        display: block;
+    }
+
+    .Welcome-Text p, .Gospel-Text p {
+        font-size: 18px;
+        line-height: 22.5px;
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: calc(100vw - 96px);
+        max-height: 46px;
+    }
+
+    .Welcome-Text hr, .Gospel-Text hr {
+        max-width: 270px;
+        height: 15px;
+        bottom: 14px;
+    }
+
+    .flex-btns{
+        flex-direction: column;
+        align-items: center;
+        max-width: 280px;
+        max-height: 126px;
+        gap: 18px;
+    }
+
+    .homepage-btns, .submit-btn {
+        max-width: 280px;
+        max-height: 14px;
+        font-size: 16px;
+        line-height: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .flex-info{
+        margin: auto;
+        flex-direction: column;
+        gap: 40px;
+        box-sizing: border-box;
+        align-items: center;
+        max-width: calc(100vw - 96px);
+        width: 100%;
+    }
+
+    .info, .faq{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .info iframe {
+        width: calc(100vw - 96px);
+        height: 266.51px;
+    }
+
+    .faq .flex-info{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        box-sizing: border-box;
+    }
+
+    .information {
+        margin-top: 40px;
+        gap: 40px;
+        max-width: calc(100vw - 96px);
+    }
+
+    .information h2 {
+        max-width: 294px;
+        max-height: 37px;
+        font-size:  32px;
+        line-height: 36.8px;
+    }
+    
+    .information hr {
+        position: relative;
+        background: linear-gradient(270deg, rgba(225, 50, 50, 0.7) -12.03%, rgba(225, 50, 50, 0) 93.57%);
+        max-width: 308px;
+        width: 100%;
+        max-height: 13px;
+        height: 13px;
+        border: 0;
+        border-radius: 100px;
+        margin: 0;
+        margin-bottom: -7px;
+        margin-top: 20px;
+        bottom: 34px;
+    }
+
+    .information h3 {
+        margin-bottom: 16px;
+        max-width: calc(100vw - 96px);
+        font-size:  16px;
+        line-height: 20px;
+    }
+
+    .information p {
+        margin-top: 16px;
+        font-size:  16px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .faq-section h2 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    .faq-section hr {
+        border: 0.5px solid #6175A9;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        bottom: -0.5px;
+    }
+
+    .redline hr{
+        border: 0;
+        background: linear-gradient(270deg, rgba(225, 50, 50, 0.7) -12.03%, rgba(225, 50, 50, 0) 93.57%);
+        max-width: 74px;
+        max-height: 15px;
+        height: 15px;
+        border-radius: 100px;
+        width: 74px;
+        margin-top: -8.5px;
+    }
+
+    .faq-section .drop:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    .faq-section .drop {
+        font-size: 18px;
+        line-height: 20.7px;
+    }
+
+    .faq-section p {
+        font-size:  16px;
+        line-height: 20.8px;
+        text-align: left;
+        margin-top: 16px;
+    
+    }
+
+    .image-frame {
+        max-width: 369.49px;
+        max-height: 431.17px;
+    }
+
+    .faq-section {
+        max-width: 375px;
+    }
+
+    .faq {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .hero {
+        margin-top: 0;
+        min-height: 501px;
+        max-width: 100vw;
+        padding: 0;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    .hero img {
+        max-width: 100vw;
+        min-height: 501px;
+        border-radius: 0;
+    }
+
+    .about-hero img {
+        object-position: 30% 100%;
+        
+    }
+
+    .page-Text {
+        max-width: 320px;
+    }
+
+    .page-title{
+        margin-inline: unset;
+        margin: auto;
+        max-width: 250px;
+        max-height: 40px;
+        top: 370.5px;
+        right: 0;
+        border-radius: 100px 0px 0px 0px;    
+    }
+
+    .page-title h2 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 28px;
+        max-width: 250px;
+        max-height: 28px;
+        left: 20px;
+    }
+
+    .page-title hr {
+        max-width: 180px;
+        height: 13px;
+        bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .about {
+        right: 0;
+        left: 0;
+    }
+
+    .our-elders{
+        max-width: calc(100vw - 96px);
+        padding-top: 40px;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-bottom: 80px;
+    }
+
+    .our-elders h2, .key-ministries h2, .beginnings h2, .vision h2, .our-beliefs h2, .flex-core h2, .service h2, .connected h2, .service-structure h2, .The-Gospel h2, .church h2, .pca h2, .Give h2  {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .our-elders hr, .beginnings hr, .vision hr, .our-beliefs hr, .service hr, .connected hr, .service-structure hr, .church hr, .pca hr, .Give hr {
+        width: 168px;
+        height: 13px;
+        margin-top: -10px;
+    }
+
+    .our-elders img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .our-elders h3, .The-Gospel h3 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.21em;
+        margin-bottom: 4px;
+    }
+
+    .our-elders h4 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        margin-bottom: 16px;
+    }
+
+    .our-elders p, .beginnings p, .vision p, .our-beliefs p, .flex-core p, .service p, .connected p, .service-structure p, .The-Gospel p, .church p, .pca p, .Give p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .flex-elders {
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    .flex-titles {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .key-ministries {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        max-width: calc(100vw - 96px);
+        margin: 0;
+    }
+
+    .key-ministries hr {
+        width: 236px;
+        height: 13px;
+        float: left;
+        margin-top: -10px;
+        margin-bottom: 0;
+    }
+
+    .flex-ministries {
+        flex-direction: column;
+        align-items: center;
+        max-width: calc(100vw - 96px);
+    }
+
+    .ministry-box {
+        max-width: calc(100vw - 96px);
+        max-height: 177px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .key-ministries h3 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20.7px;
+        margin-bottom: 16px;
+    }
+
+    .key-ministries p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .beginnings, .vision, .our-beliefs, .our-service, .connected {
+        max-width: calc(100vw - 96px);
+        padding: 0;
+        margin: auto;
+    }
+
+    .beginnings hr, .vision hr, .service hr {
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+    .beginnings p, .vision p, .service p {
+        margin-bottom: 20px;
+    }
+
+
+    .our-vision, .our-beginnings, .get-connected, .our-service {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .our-vision .flex-info {
+        flex-direction: column-reverse;
+    }
+
+    .flex-values {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 48px;
+        padding-right: 48px;
+        margin: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: calc(100vw - 96px);
+        align-items: center;
+        gap: 20px;
+    }
+
+    .flex-core {
+        max-width: calc(100vw - 96px);
+        gap: 10px;
+    }
+
+    .flex-core h2 {
+        line-height: 40px;
+        max-width: 30px;
+    }
+
+    .flex-core h3 {
+        font-size: 24px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .flex-core p {
+        margin-bottom: 16px;
+    }
+
+
+    .vision, .service {
+        max-width: calc(100vw - 96px);
+    }
+
+    .our-beliefs {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .our-beliefs p {
+        max-width: calc(100vw - 96px);
+        margin-bottom: 20px;
+    }
+
+    .our-beliefs hr {
+        margin-top: -10px;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .expect hr {
+        width: 100%;
+        left: 30px
+    }
+
+    .beginnings hr {
+        margin-left: 0;
+        width: 250px;
+    }
+
+    .service hr {
+        width:  190px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+    .service-structure {
+        padding-top: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .service-structure hr {
+        margin-bottom: 40px;
+        margin-top: -10px;
+        width: 330px;
+        margin-left: 0;
+    }
+    
+    .service-stuff {
+        max-width: calc(100vw - 96px);
+    }
+
+    .service-stuff h3 {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    
+    .service-stuff p {
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+    .connected {
+        max-height: 600px;
+    }
+
+    .get-connected hr {
+        max-width: 500px;
+        width: 250px;
+        margin: 0;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+    .gospel-image {
+        min-height: 700px;
+        max-width: 100vw;
+        object-position: 60% 60%;
+    }
+
+
+    .Gospel-Text, .Gospel-Text h2 {
+        max-height: 38px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .Gospel-Text hr {
+        margin-top: -31px;
+        margin-bottom: 20px;
+        width: 500px;
+        left: 20px
+    }
+
+    .The-Gospel {
+        max-width: calc(100vw - 96px);
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .The-Gospel h3 {
+        margin-bottom: 10px;
+    }
+
+    .The-Gospel h2 {
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .The-Gospel p {
+        line-height: 21px;
+        margin-bottom: 40px;
+    }
+
+    .The-Gospel img {
+        max-width: calc(100vw - 96px);
+        min-height: 300px;
+        object-position: 100% 50%;
+    }
+
+    .sub-gospel hr {
+        width: 180px;
+        height: 13px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+
+    .sub-gospel p {
+        margin-bottom: 16px;
+    }
+
+    .denomination {
+        max-width: 300px;
+        right: 0;
+        text-align: center;
+    }
+
+    .denomination h2 {
+        left: 0;
+        text-align: center;
+        margin: auto;
+    }
+
+    .denomination hr {
+        margin: 0;
+        max-width: 240px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .our-church {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+
+    .church h2 {
+        text-align: center;
+        line-height: 34px;
+    }
+
+    .church hr {
+        width: 490px;
+        margin-top: -12px;
+    }
+
+    .church img {
+        max-width: 286px;
+        max-height: 140px;
+        margin-bottom: 10px;
+    }
+
+    .flex-church {
+        max-width: calc(100vw - 96px);
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .who-church, .where-church {
+        max-width: calc(100vw - 96px);
+    }
+
+    .flex-church h3 {
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .pca {
+        padding-top: 40px;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-bottom: 40px;
+    }
+
+    .pca h2 {
+        text-align: center;
+    }
+
+    .pca hr {
+        width: 400px;
+        margin-bottom: 15px;
+    }
+
+    .Giving {
+        right: 0;
+    }
+
+    .Giving h2 {
+        font-size: 38px;
+        text-align: center;
+        left: 0;
+    }
+
+    .Giving hr {
+        height: 15px;
+        margin: auto;
+        width: 140px;
+        max-height: 15px;
+        margin-top: 6px;
+    }
+
+    .Give {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 20px;
+        padding-bottom: 80px;
+        width: calc(100vw - 96px);
+    }
+
+    .Give h2 {
+        text-align: center;
+        line-height: 36px;
+    }
+
+    .Give hr {
+        margin-bottom: 15px;
+        width: 255px;
+        margin: auto;
+        margin-top: -12px;
+        margin-bottom: 20px;
+    }
+
+    .Give p {
+        margin-bottom: 40px;
+    }
+
+    .Give a {
+        padding: 14px 100px 14px 100px;
+    }
+
+    .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        padding: 5px;
+        margin-left: 10px;
+        margin-bottom: 7px
+    }
+
+    footer {
+        max-height: 1103.11px;
+        height: 1103.11px;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 80px;
+    }
+
+    .flex-contact{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        min-width: calc(100vw - 96px);
+        align-items: center;
+        gap: 40px;
+    }
+
+    .Contact {
+        max-width: calc(100vw - 96px);
+        max-height: 943.11px;
+        height: 100%;
+        height: 943.11px;
+        padding-top: 40px;
+    }
+
+
+    .Contact h2 {
+        z-index: 1;
+        margin-top: 40px;
+        width: 249px;
+        max-width: 249px;
+        height: 28px;
+        font-size: 32px;
+        text-align: left;
+        float: left;
+        bottom: -40px;
+    }
+
+    .Contact hr {
+        margin-top: 105px;
+        max-width: 260px;
+        height: 15px;
+        left: 0;
+        top: 0;
+        margin-bottom: 40px;
+    }
+
+    .socials {
+        max-width: calc(100vw - 96px);
+        max-height: 220px;
+        gap: 3.18vw;
+        padding: 0;
+    }
+    
+    .socials p {
+        width: calc(100vw - 96px);
+        height: 100px;
+        font-family: "DM Sans";
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+    
+    .socials h3 {
+        font-family: "DM Sans";
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        margin-top: 16px;
+    }
+    
+    .icons {
+        margin-top: 16px;
+    }
+    
+    .icons img {
+        margin-right: 32px;
+        max-width: 32px;
+        max-height: 32px;
+        float: left;
+    }
+
+    #fname, #pnum, #eaddress {
+        width: calc(100vw - 96px);
+        height: 50px;
+    }
+    
+    #message {
+        width: calc(100vw - 96px);
+        height: 152px;
+        border-radius: 3px;
+    }
+
+    .contact-form .same-line {
+        display: block;
+    }
+
+    .left {
+        float: none;
+    }
+    
+    .right {
+        float: none;
+    }
+    
+    
+    .contact-form {
+        margin-top: 40px;
+        max-width: calc(100vw - 96px);
+    }
+    
+    
+    .contact-form label, textarea {
+        font-family: "DM Sans";
+        font-size: 18px;
+        line-height: 15.75px;
+        text-align: left;
+        height: 16px;
+        margin-bottom: 16px;
+    }
+    
+    
+    .contact-form input, textarea {
+        outline: none;
+        padding-left: 20.5px;
+        padding-right: 20.5px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        border: 1px solid #FFFFFF73;
+        background-color: #434B5F;
+        box-sizing: border-box;
+        width: 100%;
+        color: white;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 564px) {
+    .church hr {
+        width: 140px;
+    }
+}
+
+@media (max-width: 384px) {
+    .information hr {
+        margin-top: 55px;
+        max-width: 200px;
+    }
+
+    .Welcome-Text h2 {
+        max-width: 240px;
+    }
+
+    .Welcome-Text hr {
+        margin-top: 40px;
+        max-width: 130px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .service-structure h2{
+        width: 279px;
+    }
+
+    .service-structure hr {
+        width: 160px;
+    }
+
+    .homepage-image {
+        max-width: 100vw;
+        min-height: 932px;
+        object-position: 85% 60%;
+    }
+
+    .gospel-image {
+        min-height: 650px;
+    }
+
+    .pca h2 {
+        max-width: 365px;
+    }
+
+    .pca hr {
+        width: 130px;
+    }
+
+}
+@media (max-width: 378px) {
+    .Give h2 {  
+        max-width: 230px;
+        margin: auto;
+    }
+
+    .Give hr {
+        width: 90px;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: -12px;
+    }
+
+    .Give a {
+        padding: 14px 60px 14px 60px;
+    }  
+}
+
+
+@media (max-width: 375px) {
+    .Gospel-Text, .Gospel-Text h2 {
+        max-height: 38px;
+        max-width: 300px;
+    }
+
+    .Gospel-Text hr {
+        margin-top: 6px;
+        margin-bottom: 20px;
+        width: 150px;
+        left: 0;
+    }
+}
+
+
+@media (max-width: 330px) {
+    .overlay a, .overlay .drop {
+        min-width: 300px;
+    }
+
+    .overlay .closebtn {
+        right: -255.5px;
+    }
+
+    .page-title {
+        margin-left: 15px;
+    }
+
+    html,body {
+        overflow-x:hidden;
+    }
+
+    .denomination h2 {
+        text-align: left;
+    }
+
+}
