@@ -1681,7 +1681,7 @@ strong {
         cursor: pointer;
     }
 
-    .faq-section .drop {
+    .faq-section .drop, .gospel-link a {
         font-size: 18px;
         line-height: 20.7px;
     }
