@@ -1462,14 +1462,15 @@ strong {
 
 .beginnings a {
     float: left;
+}
+
+.beginnings a {
     display: block;
 }
 
 
 @media (max-width: 768px) {
-    .beginnings a {
-        float: unset;
-    }
+
     
     .blog:hover {
         text-decoration: none;
@@ -1870,9 +1871,8 @@ strong {
 
     .ministry-box {
         max-width: calc(100vw - 96px);
-        max-height: 177px;
+        max-height: 1000px;
         margin-top: 40px;
-        margin-bottom: 20px;
     }
 
     .key-ministries h3 {
@@ -1968,8 +1968,8 @@ strong {
     }
 
     .expect hr {
-        width: 100%;
-        left: 30px
+        width: 100px;
+        left: 10px
     }
 
     .beginnings hr {
@@ -2156,6 +2156,7 @@ strong {
 
     .pca hr {
         width: 400px;
+        margin-top: -10px;
         margin-bottom: 15px;
     }
 
