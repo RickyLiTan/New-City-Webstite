@@ -2366,6 +2366,18 @@ strong {
     }
 }
 
+@media (max-width: 390px) {
+    .church h2 {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .church hr {
+        width: 150px;
+    }
+}
+
+
 @media (max-width: 384px) {
     .information hr {
         margin-top: 55px;
@@ -2443,6 +2455,16 @@ strong {
 }
 
 @media (max-width: 345px) {
+    .Contact hr {
+        margin-top: 132px;
+        max-width: 180px;
+    }
+
+    .Contact h2 {
+        max-width: 200px;
+        width: 100%;
+    }
+
     .overlay a, .overlay .drop {
         min-width: 300px;
         transition: 0;
