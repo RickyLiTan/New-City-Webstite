@@ -2353,9 +2353,16 @@ strong {
     }
 }
 
-@media (max-width: 564px) {
+
+
+@media (max-width: 600px) {
+    .church h2 {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .church hr {
-        width: 140px;
+        width: 290px;
     }
 }
 
