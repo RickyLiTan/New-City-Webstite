@@ -134,7 +134,7 @@ footer {
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: min(498px, 25.9375vw);
+    max-width: min(563px, 29.323vw);
     height: 100%;
     max-height: min(56px, 2.917vw);
     font-family: "Lora";
@@ -530,7 +530,7 @@ ul {
 
 
 .Welcome-Text, .Gospel-Text{
-    max-width: min(1000.32px, 52.1vw);
+    max-width: min(1200px, 62.5vw);
     width: 100%;
     max-height: min(302px, 15.7vw);
     height: 100%;
@@ -538,11 +538,9 @@ ul {
 }
 
 .welcome, .gospel {
-    gap: min(64px, 3.333vw);
     position: absolute;
     top: min(329px, 17.135vw);
-    left: 25vw;
-    max-width: min(1000.32px, 52.1vw);
+    max-width: min(1200px, 62.5vw);
     width: 100%;
     max-height: min(302px, 15.7vw);
     height: 100%;
@@ -576,6 +574,8 @@ ul {
     font-weight: 700;
     line-height: min(3.28125vw, 63px);
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Welcome-Text p{
@@ -969,7 +969,7 @@ strong {
 
 .our-elders hr {
     float: left;
-    margin-top: max(-37px, -1.93vw);
+    margin-top: max(-40px, -2.1vw);
     width: min(15.99vw, 307px);
     height: min(1.198vw, 23px);
     border-radius: 100px;
@@ -1491,9 +1491,6 @@ strong {
         object-position: 85% 60%;
     }
 
-
-
-
     .mobile-btn a {
         margin-right: auto;
         padding: 0;
@@ -1567,7 +1564,7 @@ strong {
         font-weight: 700;
         line-height: 36.84px;
         text-align: center;
-        max-width: 261px;
+        max-width: calc(100vw - 96px);
         min-height: 72px;
         margin-left: auto;
         margin-right: auto;
@@ -2243,8 +2240,8 @@ strong {
     .Contact h2 {
         z-index: 1;
         margin-top: 40px;
-        width: 249px;
-        max-width: 249px;
+        width: calc(100vw - 96px);
+        max-width: calc(100vw - 96px);
         height: 28px;
         font-size: 32px;
         text-align: left;
@@ -2321,7 +2318,6 @@ strong {
         float: none;
     }
     
-    
     .contact-form {
         margin-top: 40px;
         max-width: calc(100vw - 96px);
@@ -2350,6 +2346,10 @@ strong {
         width: 100%;
         color: white;
         margin-bottom: 18px;
+    }
+
+    .contact-form button {
+        max-width: calc(100vw - 96px);
     }
 }
 
