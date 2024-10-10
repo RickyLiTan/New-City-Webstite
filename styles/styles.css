@@ -1643,7 +1643,7 @@ strong {
     }
 
     .information h2 {
-        max-width: 294px;
+        max-width: calc(100vw - 96px);
         max-height: 37px;
         font-size:  32px;
         line-height: 36.8px;
