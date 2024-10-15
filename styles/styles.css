@@ -1550,8 +1550,17 @@ strong {
         right: 0;
     }
 
+    .gospel {
+        max-width: calc(100vw - 55px);
+    }
+
     .Welcome-Text, .Gospel-Text {
         max-width: 100%;
+    }
+
+    .Gospel-Text p{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .Welcome-Text h2, .Gospel-Text h2 {
@@ -1640,14 +1649,14 @@ strong {
     .information h2 {
         max-width: calc(100vw - 96px);
         max-height: 37px;
-        font-size:  32px;
+        font-size:  28px;
         line-height: 36.8px;
     }
     
     .information hr {
         position: relative;
         background: linear-gradient(270deg, rgba(225, 50, 50, 0.7) -12.03%, rgba(225, 50, 50, 0) 93.57%);
-        max-width: 308px;
+        max-width: 290px;
         width: 100%;
         max-height: 13px;
         height: 13px;
@@ -1772,7 +1781,7 @@ strong {
     }
 
     .page-title hr {
-        max-width: 200px;
+        max-width: 300px;
         height: 13px;
         bottom: 10px;
         margin-top: 5px;
@@ -1959,9 +1968,19 @@ strong {
         margin-left: 0;
     }
 
+    .expect {
+        max-width: 300px;
+    }
+
+    .expect h2 {
+        max-width: 300px;
+    }
+    
+
     .expect hr {
-        width: 100px;
-        left: 10px
+        width: 270px;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .beginnings hr {
@@ -2108,6 +2127,7 @@ strong {
     .church hr {
         width: 490px;
         margin-top: -12px;
+        margin-bottom: 15px;
     }
 
     .church img {
@@ -2361,18 +2381,6 @@ strong {
     }
 }
 
-@media (max-width: 390px) {
-    .church h2 {
-        max-width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .church hr {
-        width: 150px;
-    }
-}
-
-
 @media (max-width: 384px) {
     .information hr {
         margin-top: 55px;
@@ -2414,6 +2422,15 @@ strong {
 
     .pca hr {
         width: 130px;
+    }
+
+    .church h2 {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .church hr {
+        width: 150px;
     }
 
 }
