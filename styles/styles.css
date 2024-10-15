@@ -369,6 +369,10 @@ ul {
     color: var(--Text, rgb(23, 26, 62, 0.7));
 }
 
+.dropdown a:hover {
+    cursor:default;
+}
+
 .dropdown {
     float: left;
     overflow: hidden;
