@@ -403,16 +403,16 @@ ul {
     float: none;
     color: var(--Text, #171A3E);
     padding: 0;
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-top: 24px;
+    padding-right: min(1.25vw, 24px);
+    padding-left: min(1.25vw, 24px);
+    padding-top: min(1.25vw, 24px);
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
 .dropdown-content a + a {
-    padding-bottom: 24px;
+    padding-bottom: min(1.25vw, 24px);
 }
 
 .dropdown:hover .dropdown-content {
