@@ -365,13 +365,16 @@ ul {
     color: var(--Text, rgb(23, 26, 62, 0.7));
 }
 
-.dropdown-content a:hover {
-    color: var(--Text, rgb(23, 26, 62, 0.7));
-}
-
 .dropdown a:hover {
     cursor:default;
 }
+
+.dropdown-content a:hover {
+    color: var(--Text, rgb(23, 26, 62, 0.7));
+    cursor: pointer;
+}
+
+
 
 .dropdown {
     float: left;
