@@ -254,7 +254,7 @@ footer {
 
 .socials p {
     width: min(464px, 24.17vw);
-    height: 100px;
+    height: min(5.21vw, 100px);
     font-family: "DM Sans";
     font-size: min(1.0417vw, 20px);
     line-height: min(1.3021vw, 25px);
