@@ -565,7 +565,6 @@ ul {
 .Welcome-Text h2, .Gospel-Text h2 {
     position: relative;
     z-index: 1;
-    max-width: min(1000.32px, 52.1vw);
     width: 100%;
     max-height: min(63px, 3.28125vw);
     height: 100%;
@@ -1291,10 +1290,6 @@ strong {
     max-width: min(35.8vw, 687px);
     max-height: min(3.698vw, 71px);
     right: min(26.042vw, 500px);
-}
-
-.denomination h2 {
-    max-width: min(33.7vw, 647px);
 }
 
 .denomination hr {
