@@ -1,6 +1,6 @@
 body {
     background: white;
-    color: black;
+    color: var(--Text, #171A3E);
     height: auto;
     font-family: "DM Sans";
     width: 100vw;
@@ -82,7 +82,7 @@ footer {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: black;
+    color: var(--Text, #171A3E);
     display: block;
     transition: 0.5s;
     min-width: 350px;
@@ -217,7 +217,7 @@ footer {
 
 .contact-form input:focus, textarea:focus {
     background-color: white;
-    color: black;
+    color: var(--Text, #171A3E);
 }
 
 
@@ -346,7 +346,7 @@ li a {
 
 
 .black .arrow {
-    border: solid black;
+    border: solid var(--Text, #171A3E);
     border-width: 0 min(3px, 0.15625vw) min(3px, 0.15625vw) 0;
     padding: min(3px, 0.15625vw);
     margin-left: min(10px, 0.521vw);
@@ -357,10 +357,16 @@ ul {
     gap: 1.46vw;
 }
 
+.flex li:hover, .flex a:hover {
+    color: rgb(255, 255, 255, 0.7);
+}
 
+.black li:hover, .black a:hover {
+    color: var(--Text, rgb(23, 26, 62, 0.7));
+}
 
-.flex li:hover {
-    background-color: rgba(223, 221, 221, 0.5);
+.dropdown-content a:hover {
+    color: var(--Text, rgb(23, 26, 62, 0.7));
 }
 
 .dropdown {
@@ -375,29 +381,38 @@ ul {
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 24px 32px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
 }
 
+
 .dropdown-content {
     margin-top: 1vw;
     display: none;
     position: absolute;
-    background-color: rgba(223, 221, 221, 0.5);
-    min-width: 84.16px;
+    background-color: white;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 10px;
   }
 
 .dropdown-content a {
     float: none;
-    color: white;
-    padding: 0.625vw 0.8333vw;
+    color: var(--Text, #171A3E);
+    padding: 0;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
     text-decoration: none;
     display: block;
     text-align: left;
+}
+
+.dropdown-content a + a {
+    padding-bottom: 24px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -405,11 +420,11 @@ ul {
 }
 
 .navbar a:hover, .dropdown:hover .about-hover {
-    background-color: rgba(223, 221, 221, 0.5);
+    background-color: rgba(223, 221, 221);
 }
 
 .black a{
-    color: black;
+    color: var(--Text, #171A3E);
 }
 
 
@@ -755,7 +770,7 @@ strong {
 }
 
 .gospel-link a{
-    color: black;
+    color: var(--Text, #171A3E);
 }
 
 .faq-section .drop, .gospel-link a {
@@ -1349,6 +1364,8 @@ strong {
     gap: min(4.17vw, 80px);
     text-align: left;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .who-church, .where-church {
@@ -1477,7 +1494,7 @@ strong {
 
 
     .overlay a:hover, .overlay a:focus {
-        color: black;
+        color: var(--Text, #171A3E);
     }
 
     .homepage-image {
@@ -1707,7 +1724,7 @@ strong {
     }
 
     .faq-section .drop:hover {
-        color: black;
+        color: var(--Text, #171A3E);
         cursor: pointer;
     }
 
@@ -2156,10 +2173,10 @@ strong {
     }
 
     .pca {
-        padding-top: 40px;
+        padding-top: 80px;
         padding-left: 48px;
         padding-right: 48px;
-        padding-bottom: 40px;
+        padding-bottom: 80px;
     }
 
     .pca h2 {
@@ -2220,7 +2237,7 @@ strong {
     }
 
     .arrow {
-        border: solid black;
+        border: solid var(--Text, #171A3E);
         border-width: 0 3px 3px 0;
         padding: 5px;
         margin-left: 10px;
