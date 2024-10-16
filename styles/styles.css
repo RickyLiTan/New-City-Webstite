@@ -2160,6 +2160,10 @@ strong {
         margin-bottom: 10px;
     }
 
+    .church p {
+        margin-bottom: 16px;
+    }
+
     .flex-church {
         max-width: calc(100vw - 96px);
         margin-top: 40px;
