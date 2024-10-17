@@ -21,3 +21,7 @@ function donate() {
 function blog() {
     window.open("https://www.thegospelcoalition.org/blogs/trevin-wax/gospel-definitions-trevin-wax/");
 }
+
+function confession() {
+    window.open("https://www.pcaac.org/bco/westminster-confession/")
+}
