@@ -1619,6 +1619,7 @@ strong {
         max-width: 270px;
         height: 15px;
         bottom: 14px;
+        margin-top: 3px;
     }
 
     .flex-btns{
@@ -2410,11 +2411,6 @@ strong {
 }
 
 @media (max-width: 384px) {
-    .information hr {
-        margin-top: 55px;
-        max-width: 200px;
-    }
-
     .Welcome-Text h2 {
         max-width: 240px;
     }
