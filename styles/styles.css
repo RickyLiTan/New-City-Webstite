@@ -26,7 +26,7 @@ main h2 {
 
 
 .anchor {
-    display:block;
+    display: block;
     padding-top: min(3.656vw, 70px);
     margin-top: min(2.60412vw, 50px);
  }
