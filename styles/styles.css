@@ -1379,6 +1379,15 @@ strong {
     width: 100%;
 }
 
+.who-church strong {
+    color: #315cac;
+}
+
+.who-church strong:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .flex-church h3 {
     font-size: min(32px, 1.67vw);
     font-weight: 700;
