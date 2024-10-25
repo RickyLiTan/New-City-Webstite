@@ -602,18 +602,16 @@ ul {
 .Welcome-Text p{
     max-width: min(647px, 33.698vw);
     width: 100%;
-    max-height: min(60px, 3.125vw);
-    height: 100%;
     font-family: 'DM Sans';
     font-size: min(1.25vw, 24px);
-    line-height: 30px;
+    line-height: min(30px, 1.5625vw);
     margin: auto;
     margin-top: min(40px,0.78125vw);
     margin-bottom: min(64px,3.333vw);
     text-align: center;
 }
 
-.Welcome-Text br {
+.Welcome-Text h2 br {
     display: none;
 }
 
@@ -738,7 +736,7 @@ ul {
     margin-top: min(40px, 2.08333vw);
     font-family: "DM Sans";
     font-size:  min(0.9375vw, 18px);
-    line-height: 22.5px;
+    line-height: min(22.5px, 1.171875vw);
     text-align: left;
 
 }
@@ -1611,7 +1609,7 @@ strong {
 
     }
 
-    .Welcome-Text br {
+    .Welcome-Text h2 br {
         display: block;
     }
 
