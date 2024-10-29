@@ -465,7 +465,7 @@ ul {
 
 .hamburger {
     display: none;
-    margin-right: 2.63vw;
+    margin-right: calc(1.46vw + 16px);
 }
 
 .mobile-btn a{
@@ -2568,4 +2568,6 @@ strong {
     html,body {
         overflow-x:hidden;
     }
+
+
 }
