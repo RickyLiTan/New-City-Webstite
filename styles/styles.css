@@ -1000,7 +1000,7 @@ strong {
 
 .our-elders h2 {
     font-size: min(2.917vw, 56px);
-    margin-bottom: max(0.42vw, 18px);
+    margin-bottom: min(0.9375vw, 18px);
     font-weight: 700;
     text-align: left;
 }
@@ -2568,6 +2568,4 @@ strong {
     html,body {
         overflow-x:hidden;
     }
-
-
 }
