@@ -1524,7 +1524,8 @@ strong {
 @media (max-width: 768px) {
     .overlay .closebtn {
         top: 40px;
-        left: 88vw;
+        left: calc(95vw - 48px);
+        margin-right: 48px;
     }
 
     .blog:hover {
@@ -1591,7 +1592,7 @@ strong {
     }
 
     .hamburger {
-        max-width: 100%;
+        max-width: 24px;
     }
 
     .logo-image {
