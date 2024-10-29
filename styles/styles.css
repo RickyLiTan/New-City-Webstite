@@ -465,6 +465,7 @@ ul {
 
 .hamburger {
     display: none;
+    margin-right: 2.63vw;
 }
 
 .mobile-btn a{
@@ -1505,6 +1506,10 @@ strong {
         display: block;
     }
 
+    .hamburger{
+        max-width: 1.75vw;
+    }
+
     .arrow {
         border: solid var(--Text, #171A3E);
         border-width: 0 3px 3px 0;
@@ -1582,6 +1587,11 @@ strong {
 
     .hamburger, header .mobile-btn a{
         display: block;
+        margin-right: 0px;
+    }
+
+    .hamburger {
+        max-width: 100%;
     }
 
     .logo-image {
