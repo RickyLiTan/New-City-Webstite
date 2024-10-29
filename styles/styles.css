@@ -100,8 +100,9 @@ footer {
 .overlay .closebtn {
     -webkit-tap-highlight-color: transparent;
     position: absolute;
-    top: 23px;
-    right: -305.5px;
+    top: 20px;
+    left: 85vw;
+    right: 0px;
     float: right;
     font-size: 60px;
 }
@@ -1516,6 +1517,11 @@ strong {
 
 
 @media (max-width: 768px) {
+    .overlay .closebtn {
+        top: 40px;
+        left: 88vw;
+    }
+
     .blog:hover {
         text-decoration: none;
     }
@@ -2541,7 +2547,7 @@ strong {
 
 @media (max-width: 330px) {
     .overlay .closebtn {
-        right: -255.5px;
+        left: 75vw;
     }
 
     .socials p {
