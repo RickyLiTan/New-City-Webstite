@@ -1494,10 +1494,28 @@ strong {
     display: block;
 }
 
+@media (max-width: 1368px) and (pointer:coarse)  {
+    header a
+    {
+        display: none;
+    }
+
+    .hamburger, header .mobile-btn a{
+        display: block;
+    }
+
+    .arrow {
+        border: solid var(--Text, #171A3E);
+        border-width: 0 3px 3px 0;
+        padding: 5px;
+        margin-left: 10px;
+        margin-bottom: 7px
+    }
+
+}
+
 
 @media (max-width: 768px) {
-
-    
     .blog:hover {
         text-decoration: none;
     }
@@ -1564,7 +1582,6 @@ strong {
         max-width: 186px;
         max-height: 48px;
     }
-
 
     nav {
         max-width: 100%;
