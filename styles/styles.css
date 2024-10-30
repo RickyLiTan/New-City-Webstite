@@ -100,11 +100,11 @@ footer {
 .overlay .closebtn {
     -webkit-tap-highlight-color: transparent;
     position: absolute;
-    top: 20px;
-    left: 85vw;
+    top: min(1.462vw, 20px);
+    left: 82.5vw;
     right: 0px;
     float: right;
-    font-size: 60px;
+    font-size: min(4.39vw, 60px);
 }
   
 
@@ -1526,6 +1526,7 @@ strong {
         top: 40px;
         left: calc(95vw - 48px);
         margin-right: 48px;
+        font-size: 60px;
     }
 
     .blog:hover {
