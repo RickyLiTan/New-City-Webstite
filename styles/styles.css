@@ -346,6 +346,7 @@ li a {
 
 
 
+
 .black .arrow {
     border: solid var(--Text, #171A3E);
     border-width: 0 min(3px, 0.15625vw) min(3px, 0.15625vw) 0;
@@ -465,7 +466,7 @@ ul {
 
 .hamburger {
     display: none;
-    margin-right: calc(1.46vw + 16px);
+    margin-right: calc(1.46vw + 20px);
 }
 
 .mobile-btn a{
@@ -474,7 +475,9 @@ ul {
     max-height: 48px;
     width: 100%;
     height: 100%;
+    padding: 0px;
     margin-right: auto;
+    margin-left: 1.46vw;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -1550,7 +1553,7 @@ strong {
 
     .mobile-btn a {
         margin-right: auto;
-        padding: 0;
+        margin-left: 0px;
         width: 186px;
         height: 48px;
     }
