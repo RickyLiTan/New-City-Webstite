@@ -31,32 +31,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-const form = document.querySelectorAll('.validation');
-
-for (k = 0; k < form.length; k++)
-{  
-  var actualForm = form[k];
-  actualForm.addEventListener('submit', e => {
-      e.preventDefault();
-      const formData = new FormData(actualForm);
-      const xhr = new XMLHttpRequest();
-      for (var [key, value] of formData.entries()) { 
-        console.log(key, value);
-    }
-      xhr.open('POST', actualForm.action, true);
-      xhr.setRequestHeader('Accept', 'application/json');
-      xhr.onreadystatechange = () => {
-          if (xhr.readyState !== XMLHttpRequest.DONE) return;
-          if (xhr.status === 200) {
-            actualForm.reset();
-              alert('Thank you for your message. We will get back to you soon.');
-          } else {
-              alert('Sorry, there was an error. Please try again later.');
-          }
-      };
-      xhr.send(formData);
-  });
-}
 
 function newsletter()
 {
@@ -85,7 +59,7 @@ function validateMyForm()
   const optionsVal = document.getElementById("options");
   if (optionsVal.options[optionsVal.selectedIndex].text == '-Select an Option-')
   { 
-    alert("validation failed false");
+    alert("Please Select an Option");
     return;
   }
 
