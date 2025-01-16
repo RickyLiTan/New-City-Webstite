@@ -7,7 +7,7 @@ for (i = 0; i < acc.length; i++) {
     if (x.style.display === "block") {
       this.classList.remove("active");
       x.style.display = "none";
-      if (window.innerWidth <= 768) {
+      if (matchMedia('(pointer:coarse)').matches) {
         this.querySelector(".arrow").style.borderWidth = "0 3px 3px 0";
       }
       
@@ -16,7 +16,7 @@ for (i = 0; i < acc.length; i++) {
         acc[j].classList.remove("active");
         var panel = acc[j].nextElementSibling;
         panel.style.display = "none";
-        if (window.innerWidth <= 768) {
+        if (matchMedia('(pointer:coarse)').matches) {
           if (acc[j].querySelector(".arrow") != null){
             acc[j].querySelector(".arrow").style.borderWidth = "0 3px 3px 0";
         }
@@ -24,28 +24,85 @@ for (i = 0; i < acc.length; i++) {
       }
       this.classList.toggle("active");
       x.style.display = "block";
-      if (window.innerWidth <= 768) {
+      if (matchMedia('(pointer:coarse)').matches) {
         this.querySelector(".arrow").style.borderWidth = "3px 0 0 3px";
       }
     }
   });
 }
 
-const form = document.querySelector('form');
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', form.action, true);
-    xhr.setRequestHeader('Accept', 'application/json');
-    xhr.onreadystatechange = () => {
-        if (xhr.readyState !== XMLHttpRequest.DONE) return;
-        if (xhr.status === 200) {
-            form.reset();
-            alert('Thank you for your message. We will get back to you soon.');
-        } else {
-            alert('Sorry, there was an error. Please try again later.');
-        }
-    };
-    xhr.send(formData);
-});
+const form = document.querySelectorAll('.validation');
+
+for (k = 0; k < form.length; k++)
+{  
+  var actualForm = form[k];
+  actualForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const formData = new FormData(actualForm);
+      const xhr = new XMLHttpRequest();
+      for (var [key, value] of formData.entries()) { 
+        console.log(key, value);
+    }
+      xhr.open('POST', actualForm.action, true);
+      xhr.setRequestHeader('Accept', 'application/json');
+      xhr.onreadystatechange = () => {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+          if (xhr.status === 200) {
+            actualForm.reset();
+              alert('Thank you for your message. We will get back to you soon.');
+          } else {
+              alert('Sorry, there was an error. Please try again later.');
+          }
+      };
+      xhr.send(formData);
+  });
+}
+
+function newsletter()
+{
+  event.preventDefault();
+  const form = event.srcElement;
+  const formData = new FormData(form);
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', form.action, true);
+  xhr.setRequestHeader('Accept', 'application/json');
+
+  xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+          form.reset();
+          alert('Thank you for your message. We will get back to you soon.');
+      } else {
+          alert('Sorry, there was an error. Please try again later.');
+      }
+  };
+  xhr.send(formData);
+}
+
+function validateMyForm()
+{
+  event.preventDefault();
+  const optionsVal = document.getElementById("options");
+  if (optionsVal.options[optionsVal.selectedIndex].text == '-Select an Option-')
+  { 
+    alert("validation failed false");
+    return;
+  }
+
+  const form = document.querySelector('.connect-validation');
+  const formData = new FormData(form);
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', form.action, true);
+  xhr.setRequestHeader('Accept', 'application/json');
+
+  xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+          form.reset();
+          alert('Thank you for your message. We will get back to you soon.');
+      } else {
+          alert('Sorry, there was an error. Please try again later.');
+      }
+  };
+  xhr.send(formData);
+}
