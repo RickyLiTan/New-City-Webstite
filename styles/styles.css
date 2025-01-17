@@ -2652,6 +2652,18 @@ strong {
         margin-top: -10px;
     }
 
+    .dedicated-ministires {
+        padding-top: 40px;
+    }
+
+    .ministry-connect {
+        margin-bottom: 40px;
+    }
+
+    .white-ministires {
+        margin-bottom: 80px;
+    }
+
     .dedicated-ministires .flex-ministries {
         margin-bottom: 40px;
     }
