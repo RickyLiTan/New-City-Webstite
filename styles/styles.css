@@ -503,6 +503,73 @@ ul {
     transform: scaleX(-1);
 }
 
+.events {
+    font-family: 'DM Sans';
+    max-width: min(1150px, 59.896vw);
+    width: 100%;
+    padding-top: min(4.167vw, 80px);
+    padding-right: min(20.0521vw, 385px);
+    padding-left: min(20.0521vw, 385px);
+    margin: auto;
+}
+
+.events hr {
+    background: linear-gradient(270deg, rgba(97, 117, 169, 0.7) -12.03%, rgba(97, 117, 169, 0) 93.57%);
+    height: min(23px, 1.19792vw);
+    border-radius: min(5.208333vw, 100px);
+    border: none;
+    margin: 0;
+    margin-top: max(-18px, -0.9375vw);
+    width: min(460px, 23.958vw)
+}
+
+.events p {
+    margin-top: min(40px, 2.083333vw);
+    font-size: min(0.9375vw, 18px);
+    line-height: min(1.171875vw, 22.5px);
+    margin-bottom: min(40px, 2.083333vw);;
+}
+
+.events a {
+    display: block;
+    float: left;
+    margin-bottom: min(64px, 3.333vw);
+}
+
+.events br {
+    display: none;
+}
+
+.events img {
+    max-width: min(555px, 28.906vw);
+    width: 100%;
+    border-radius: 10px;
+    max-height: min(620px, 32.292vw);
+    height: 100%;
+    
+}
+
+.event-pics{
+    width: 100%;
+    max-width: min(1150px, 59.896vw);
+    display: flex;
+    gap: min(2.1vw, 40px);
+}
+
+.events button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    top: 0;
+    width: 100%;
+    max-width: 100px;
+    height: 10px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+
 
 .Welcome-Text, .Gospel-Text{
     max-width: min(1200px, 62.5vw);
@@ -1684,17 +1751,6 @@ strong {
     margin-top: min(0.9375vw, 18px);
 }
 
-.connection-section .connect-btn {
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    max-height: 64px;
-    max-width: 280px;
-    font-size: 18px;
-    background-color: rgba(97, 117, 169, 1);
-
-}
 
 .ministry, .ministry hr {
     max-width: min(500px, 26.04167vw);
@@ -1877,7 +1933,6 @@ strong {
         left: 0;
         right: 0;
         font-weight: 700;
-
     }
 
     .Welcome-Text h2 br {
@@ -1915,6 +1970,44 @@ strong {
         line-height: 16px;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+
+    .events {
+        max-width: calc(100vw - 96px);
+        padding: 0;
+        padding-top: 40px;
+    }
+
+
+    .events hr {
+        height: 15px;
+        border-radius: 100px;
+        width: 230px;
+        margin-top: -15px
+    }
+
+    .events p {
+        font-size: 18px;
+        line-height: 22.5px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .events h2 {
+        max-height: 37px;
+        font-size:  28px;
+        line-height: 36.8px;
+    }
+
+    .event-pics {
+        flex-direction: column;
+        max-width: calc(100vw - 96px);
+    }
+
+    .events img {
+        margin-top: 40px;
+        max-width: calc(100vw - 96px);
+        max-height: 100%;
     }
 
     .flex-info{
@@ -2887,6 +2980,17 @@ strong {
 
     .socials strong {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    .information h2 {
+        max-width: 200px;
+    }
+
+    .information hr {
+        margin-top: 55px;
+        max-width: 180px;
     }
 }
 
