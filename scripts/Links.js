@@ -25,3 +25,7 @@ function blog() {
 function confession() {
     window.open("https://www.pcaac.org/bco/westminster-confession/")
 }
+
+function event() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdHsTKCm8k6HsR7rqcvDYvKTvK1y45D5nAI_uRKQnG0O0WWgw/viewform")
+}
