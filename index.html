@@ -15,6 +15,7 @@
         <link href='https://fonts.googleapis.com/css?family=DM%20Sans' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        
     </head>
 
     <body>
@@ -83,14 +84,18 @@
                     </div>
                 </div>
             </div>
-            <div class = "events">
-                <h2>Upcoming<br> Event</h2>
-                <hr>
-                <p>Join us on the ultimate Alaskan adventure where northern lights glow over majestic mountains, racing rivers, and glistening glaciers. As kids trek the tundra, they'll explore how easy it is to lose sight of what's true in our wild world today. Through fun science experiments, outdoor games, unforgettable Bible songs and tasty treats, we'll give kids a rock-solid foundation and point them to Jesus, their unmovable, unshakable friend forever!</p>
-                <a class="submit-btn homepage-btns give-btn" onclick="eventDoc()">Camp Registration</a>  
+            <div class = "events flex-info">
+                <div class = "events-info">
+                    <h2>Upcoming<br> Event</h2>
+                    <hr>
+                    <p>Stay connected and join us to our upcoming gatherings and activites within our Church Community! We look forward to seeing you there!</p>
+                </div>
+                
                 <div class = "event-pics">
-                    <img class="events-img" src = "../../img/events/event1.jpg" alt = "events_1">
-                    <img class="events-img" src = "../../img/events/event2.jpg" alt = "events_2">
+                    <img class="events-img slide" src = "../../img/events/event3.png" alt = "events_3">
+                    <img class="events-img slide" src = "../../img/events/event4.png" alt = "events_4">
+                    <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="right" onclick="plusDivs(1)">&#10095;</button>
                 </div>
             </div>
             <div class = "info" id = "INFO">
@@ -221,5 +226,6 @@
         <script src="../../scripts/Functions.js"></script>
         <script src ="../../scripts/Hamburger.js"></script>
         <script src="../../scripts/Links.js"></script>
+        <script src="../../scripts/Slider.js"></script>
     </body>
 </html>
